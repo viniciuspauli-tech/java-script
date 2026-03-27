@@ -1,10 +1,10 @@
 function OrdenarValoresInteiros() {
-    let vet = [];
+    let numeros = [];
 
-    for (let i = 1; i <= 4; i++) {
-        let valor = parseFloat(prompt("Informe o valor " + i));
-        vet.push(valor);
+    for (let i = 1; i < 5; i++) {
+        numeros.push (Number(prompt("Informe o valor " + i)));
+       
     }
-
-    console.log(vet);
+    numeros.sort((a, b) => b - a);
+    alert("os numeros em ordem decrecente são: +" + numeros.join(", "));
 }
